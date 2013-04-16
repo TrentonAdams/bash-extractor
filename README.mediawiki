@@ -5,6 +5,6 @@ A bash extractor generation script.  It embeds a tar.gz binary file into a bash 
 
 Run as follows.../
 
-git clone git://github.com/TrentonAdams/bash-extractor.git
-cd bash-extractor
-./gen-extractor.sh my.tar.gz
+ git clone git://github.com/TrentonAdams/bash-extractor.git
+ cd bash-extractor
+ ./gen-extractor.sh my.tar.gz
