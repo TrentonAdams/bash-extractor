@@ -24,5 +24,6 @@
 name="$1"
 script="$2"
 
-cat extract.sh footer "${name}" > "${name}-extract.sh"
-chmod a+x "${name}-extract.sh"
+cat extract.sh footer "${name}" > "${name}.sh"
+chmod a+x "${name}.sh"
+echo "File created: ${name}.sh"
