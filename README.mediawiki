@@ -1,0 +1,10 @@
+=bash-extractor=
+
+
+A bash extractor generation script.  It embeds a tar.gz binary file into a bash script, making a self-extracting tar.gz.  
+
+Run as follows.../
+
+git clone git://github.com/TrentonAdams/bash-extractor.git
+cd bash-extractor
+./gen-extractor.sh my.tar.gz
