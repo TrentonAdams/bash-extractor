@@ -8,5 +8,9 @@ Run as follows.../
  cd bash-extractor
  ./gen-extractor.sh my.tar.gz
 
-== Credits ==
+== Credits/License ==
+
 Taken from [[http://lembra.wordpress.com/2011/09/04/how-to-generate-a-bash-script-with-an-embeeded-tar-gz-self-extract/|lembra's blog]], though the original source looks likely to be the [[http://www.linuxjournal.com/node/1005818|Linux Journal]]
+
+Since there does not seem to be any indication of a license from the
+sources, this source is apparently public domain.
