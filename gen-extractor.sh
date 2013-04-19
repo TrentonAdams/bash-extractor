@@ -24,6 +24,9 @@
 name="$1"
 script="$2"
 
-cat extract.sh footer "${name}" > "${name}.sh"
+echo -n '' > "${name}.sh"
+for sh in extract.sh "$script" footer "${name}"; do 
+  cat "$sh" >> "${name}.sh";
+done;
 chmod a+x "${name}.sh"
 echo "File created: ${name}.sh"

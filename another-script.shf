@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "All environment variables from the extractor script are available"
+echo "Such as destination: $destination"
