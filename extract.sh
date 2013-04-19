@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# todo
+# Do not require a specific type of package system.  Allow the script 
+# to specify an operation instead.  However, perhaps support some 
+# default operations for tar.gz.
+
 echo "Extracting file into /var/tmp/"
 # searches for the line number where finish the script and start the tar.gz
 #skip=`awk '/^__TARFILE_FOLLOWS__/ { print NR + 1; exit 0; }' $0`
