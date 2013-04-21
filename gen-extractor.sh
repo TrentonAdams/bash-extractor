@@ -23,9 +23,10 @@
 # additional script to be run
 name="$1"
 script="$2"
+sourcedir="$(dirname $(readlink -f "$0"))"
 
 echo -n '' > "${name}.sh"
-for sh in extract.sh "$script" footer "${name}"; do 
+for sh in "$sourcedir/extract.sh" "$script" "$sourcedir/footer" "${name}"; do 
   cat "$sh" >> "${name}.sh";
 done;
 chmod a+x "${name}.sh"
