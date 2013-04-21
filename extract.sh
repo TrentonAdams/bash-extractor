@@ -15,6 +15,6 @@ destination="$(mktemp -d /var/tmp/XXX)"
 #remember our file name
 this=$0
 # take the tarfile and pipe it into tar
-tail -n +$skip $this | tar -xvz -C "$destination"
+tail -n +$skip $this | tar -xz -C "$destination"
 # Any script here will happen after the tar file extract.
 echo "Finished, extracted to $destination"
