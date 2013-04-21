@@ -27,7 +27,7 @@ sourcedir="$(dirname $(readlink -f "$0"))"
 
 echo -n '' > "${name}.sh"
 for sh in "$sourcedir/extract.sh" "$script" "$sourcedir/footer" "${name}"; do 
-  cat "$sh" >> "${name}.sh";
+  /bin/cat "$sh" >> "${name}.sh";
 done;
 chmod a+x "${name}.sh"
 echo "File created: ${name}.sh"
