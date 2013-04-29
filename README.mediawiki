@@ -1,5 +1,5 @@
 =bash-extractor=
-A bash extractor generation script.  It embeds a tar.gz binary file into a bash script, making a self-extracting tar.gz.  Also extracts to a temporary directory in /var/tmp/
+A bash extractor generation script.  It embeds a tar.gz binary file into a bash script, making a self-extracting tar.gz.  Extracts to a temporary directory in /var/tmp/.  Allows addition of an additional script to run after extraction; this allows for completely automated restores for example.
 
 == Usage ==
 Run as follows.../
