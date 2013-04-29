@@ -25,11 +25,17 @@ name="$1"
 script="$2"
 sourcedir="$(dirname $(readlink -f "$0"))"
 
+exit_code=0;
+
 echo -n '' > "${name}.sh"
 for sh in "$sourcedir/extract.sh" "$script" "$sourcedir/footer" "${name}"; do 
   if [ "$sh" != "" ]; then
     /bin/cat "$sh" >> "${name}.sh";
+    exit_code=$(($exit_code + $?))
   fi;
 done;
 chmod a+x "${name}.sh"
+exit_code=$(($exit_code + $?))
 echo "File created: ${name}.sh"
+
+exit $exit_code;
